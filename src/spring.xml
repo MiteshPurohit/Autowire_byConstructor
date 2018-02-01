@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd" [
+<!ENTITY contextInclude SYSTEM "org/springframework/web/context/WEB-INF/contextInclude.xml">
+]>
+
+<beans>
+    
+    <bean id="tri" class="org.java.Triangle" autowire="constructor">
+        <!-- autowire using constructor will find the Constructor with having 
+            all the properties as an argument inside Triangle Class 
+            for injecting the value -->
+    </bean>
+
+    <bean id="one" class="org.java.Point">
+        <property name="x" value="0"/>
+        <property name="y" value="10"/>
+    </bean>
+   
+  
+</beans>
